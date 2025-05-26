@@ -2,3 +2,4 @@ external-credentials.yml
 login_attempts.csv
 .env
 /target/
+clean-repo.sh
