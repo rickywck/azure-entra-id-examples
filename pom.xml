@@ -24,6 +24,11 @@
 	<groupId>com.azure.spring</groupId>
 	<artifactId>spring-cloud-azure-starter-active-directory</artifactId>
     </dependency>  
+    <!-- Spring Security -->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-security</artifactId>
+    </dependency>
     <!-- Spring OAuth2 Client -->  
     <dependency> 
       <groupId>org.springframework.boot</groupId>  
