@@ -1,6 +1,4 @@
 spring:
-  config:
-    import: optional:file:./external-credentials.yml
   cloud:
     azure:
       active-directory:
@@ -10,7 +8,10 @@ spring:
           # Specifies your Active Directory ID:
           tenant-id: ${TENANT_ID}
         credential:  
-          # client-id and client-secret will be imported from external-credentials.yml
+          # Specifies your App Registration's Application ID:
+          client-id: ${CLIENT_ID}
+          # Specifies your App Registration's secret key:
+          client-secret: ${CLIENT_SECRET}
         # Specifies the post-log-out-redirect-uri, where to return your app after logout.
         post-logout-redirect-uri: http://localhost:8080
         # Specifies the Microsoft Graph scopes that your app needs access to - not required in this app.
@@ -33,3 +34,5 @@ app:
 #       protocol-header: "X-Forwarded-Proto"
 #       remote-ip-header: "X-Forwarded-For"
 #       internal-proxies: ".*"
+
+
